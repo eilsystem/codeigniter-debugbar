@@ -358,7 +358,7 @@ class CI_Profiler
     {
         foreach ($this->_available_sections as $section)
         {
-            if ($this->_compile_{$section} !== FALSE)
+            if ($this->_compile_[$section] !== FALSE)
             {
                 $this->{'_compile_'.$section}();
             }
